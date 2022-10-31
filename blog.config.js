@@ -4,11 +4,16 @@ const BLOG = {
   BIO: '程序员/产品经理/运营总监', // 作者简介
   LINK: 'https://louqi.xyz', // 网站地址
   KEYWORDS: 'LinQingShan, 林清山', // 网站关键词 英文逗号隔开
+  home:{ //首页
+    showHomeBanner:flase,
+    homeBannerStrings:['Hi, 我是一个程序员','Hi, 我是一个产品经理','Hi, 我是一个运营总监🤔'],
+    homeBannerImage:'./bg_image.jpg'
+  },
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
-
+  
   // 一个小插件展示你的facebook fan page~ @see https://tw.andys.pro/article/add-facebook-fanpage-notionnext
   FACEBOOK_PAGE_TITLE:
     process.env.NEXT_PUBLIC_FACEBOOK_PAGE_TITLE || null, // 邊欄 Facebook Page widget 的標題欄，填''則無標題欄 e.g FACEBOOK 粉絲團'
